@@ -1,0 +1,388 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@300;400;500;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+main {
+  /* position: relative;
+  width: calc(min(90rem, 90%));
+  margin: 0 auto;
+  min-height: 100vh;
+  column-gap: 3rem;
+  padding-block: min(20vh, 3rem); */
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.bg {
+  position: fixed;
+  top: -4rem;
+  left: -12rem;
+  z-index: -1;
+  opacity: 0;
+}
+
+.bg2 {
+  position: fixed;
+  bottom: -2rem;
+  right: -3rem;
+  z-index: -1;
+  width: 9.375rem;
+  opacity: 0;
+}
+
+main > div h5 {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 1rem;
+  color: #000000;
+}
+
+main > div h1 {
+  text-transform: capitalize;
+  letter-spacing: 0.8px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: clamp(3rem, -4vw + 6rem, 4.5rem);
+  background-color: #005baa;
+  background-image: linear-gradient(45deg, #005baa, #000000);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+main > div hr {
+  display: block;
+  background: #005baa;
+  height: 0.25rem;
+  width: 6.25rem;
+  border: none;
+  margin: 1.125rem 0 1.875rem 0;
+}
+
+main > div p {
+  line-height: 1.6;
+}
+
+main a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #c5c5c5;
+  font-weight: 500;
+  background: #161af4;
+  border-radius: 3.125rem;
+  transition: 0.3s ease-in-out;
+}
+
+main > div > a {
+  border: 2px solid #c2c2c2;
+  margin-top: 2.188rem;
+  padding: 0.625rem 1.875rem;
+}
+
+main > div > a:hover {
+  border: 0.125rem solid #bacee0;
+  color: #9fcaf0;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 3.125rem;
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+.swiper-pagination {
+  bottom: 1.25rem !important;
+}
+
+.swiper-slide {
+  width: 18.75rem;
+  height: 28.125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: self-start;
+}
+
+.swiper-slide h2 {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin-bottom: 0.625rem;
+  padding: 0 0 0 1.563rem;
+  text-transform: uppercase;
+}
+.swiper-slide h3 {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 0.625rem;
+  padding: 0 0 0 1.563rem;
+  text-transform: uppercase;
+}
+
+.swiper-slide p {
+  color: #dadada;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding: 0 1.563rem;
+  line-height: 1.6;
+  font-size: 0.75rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.swiper-slide a {
+  margin: 1.25rem 1.563rem 3.438rem 1.563rem;
+  padding: 0.438em 1.875rem;
+  font-size: 0.9rem;
+}
+
+.swiper-slide a:hover {
+  color: #005baa;
+}
+
+.swiper-slide div {
+  display: none;
+  opacity: 0;
+  padding-bottom: 0.625rem;
+}
+
+.swiper-slide-active div {
+  display: block;
+  opacity: 1;
+}
+
+.swiper-slide--one {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/WE_Sanders.jpg/110px-WE_Sanders.jpg")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--two {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Castle_Neuschwanstein.jpg/500px-Castle_Neuschwanstein.jpg")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--three {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Jacoba_van_heemskerk%2C_due_alberi%2C_1908-10_ca.jpg/111px-Jacoba_van_heemskerk%2C_due_alberi%2C_1908-10_ca.jpg")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--four {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://previews.123rf.com/images/bloodua/bloodua1708/bloodua170800506/84995069-rome-italy-july-26-2017-people-in-traditional-italian-costume-in-rome-italy-in-a-summer-day.jpg")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--five {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://images.unsplash.com/photo-1570481662006-a3a1374699e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--si {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/WE_Sanders.jpg/110px-WE_Sanders.jpg")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--seven {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Castle_Neuschwanstein.jpg/500px-Castle_Neuschwanstein.jpg")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--eight {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Jacoba_van_heemskerk%2C_due_alberi%2C_1908-10_ca.jpg/111px-Jacoba_van_heemskerk%2C_due_alberi%2C_1908-10_ca.jpg")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--nine {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://previews.123rf.com/images/bloodua/bloodua1708/bloodua170800506/84995069-rome-italy-july-26-2017-people-in-traditional-italian-costume-in-rome-italy-in-a-summer-day.jpg")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--ten {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://images.unsplash.com/photo-1570481662006-a3a1374699e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
+
+@media screen and (max-width: 2560px) {
+  .swiper {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .swiper {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .swiper {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .swiper {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .swiper {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .swiper {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .swiper {
+    width: 45%;
+  }
+}
+
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgb(82, 42, 225); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #62ffd3;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.button:hover,
+#myBtn:hover {
+  background-color: #62ffd3;
+}
+
+.button:active,
+#myBtn:hover {
+  background-color: #3e8e85;
+  box-shadow: 0 5px #aeedff;
+  transform: translateY(4px);
+}
+
+
+.dark-mode {
+  background-color: #292c35;
+}
+
+.dark_mode span {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.dark-mode div h5 {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.dark-mode div h1 {
+  text-transform: capitalize;
+  letter-spacing: 0.8px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: clamp(3rem, -4vw + 6rem, 4.5rem);
+  background-color: #ffffff;
+  background-image: linear-gradient(45deg, #88b1d5, #888585);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.dark-mode div hr {
+  display: block;
+  background: #005baa;
+  height: 0.25rem;
+  width: 6.25rem;
+  border: none;
+  margin: 1.125rem 0 1.875rem 0;
+}
+
+.dark-mode div p {
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.dark-mode a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 500;
+  background: #49969f;
+  border-radius: 3.125rem;
+  transition: 0.3s ease-in-out;
+}
+
+.dark-mode > div > a {
+  border: 2px solid #1f1e1e;
+  margin-top: 2.188rem;
+  padding: 0.625rem 1.875rem;
+}
+
+.dark-mode > div > a:hover {
+  border: 0.125rem solid #005baa;
+  color: #005baa;
+}
+
+
